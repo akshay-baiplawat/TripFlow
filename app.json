@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Trip Flow",
+    "slug": "tripflow",
+    "version": "1.0.0",
+    "scheme": "tripflow",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.stridetech.tripflow",
+      "associatedDomains": ["applinks:tripflow.app"]
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.stridetech.tripflow",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [{ "scheme": "tripflow" }],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-google-signin/google-signin",
+      "expo-apple-authentication",
+      ["expo-navigation-bar", { "enforceContrast": false }],
+      [
+        "expo-notifications",
+        {
+          "color": "#059669",
+          "defaultChannel": "tripflow-alerts"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": { "deploymentTarget": "16.4" },
+          "android": { "minSdkVersion": 24 }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # Product Requirements Document (PRD) — TripFlow V1
 
+> **Status as of 2026-08-30:** All V1 features implemented and production-ready. See `TASKS.md` for the full bug fix log and UI update notes. Pending items: unit tests for engine/fractional rank, NetInfo reconnect wiring, departure notification wiring from day.tsx.
+
 ## 1. Executive Summary
 TripFlow is a mobile SaaS designed to solve schedule rigidity during group and solo trips. When real-world conditions deviate from the plan (monsoons, wake-up delays, transit traffic), TripFlow dynamically recalculates the entire day's schedule across all participants while providing instant maps navigation, offline checklists, and group alerts.
 
